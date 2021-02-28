@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header {
+    border: 5px solid brown;
+    padding: 15px; /* some padding */
+    text-align: left; /* center the text */
+    background: #17bcda; /* green background */
+    color: white; /* white text color */
+  }
+  #image{
+    float: left;
+    padding-right: 30px;
+    max-width: 125px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+  }
+  /* Increase the font size of the <h1> element */
+  .header h1 {
+    font-size: 40px;
+  }
+  .container-fluid{
+    background-color: rgb(82, 12, 12); /* Dark background color */
+
+  }
+  .container-fluid a {
+    background-color: rgb(190, 155, 155);
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: rgb(7, 3, 3); /* White text color */
+    text-align: center; /* Center the text */
+    padding: 10px 15px; /* Add some padding */
+    
+  }
+  .container-fluid a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+  }
+  .dropdown-menu{
+      color: brown;
+  }
+  /* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+.footer{
+  float: left;
+  bottom: 0;
+  width: 100%;
+  height:auto;
+  background-color: rgb(228, 51, 60);
+  border: currentColor;
+  padding-top: 5px; /*footer height*/
+ 
+}
+.footer a {
+  float: right;
+  padding: 5px;
+  display: block;
+  justify-content: center;
+}
+ /* Column container */
+ .row {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f198; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+#side_img{
+  width: 300px;;
+  height: 200px;
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+.section {
+  padding: 5%;
+  display: block;
+}
+.container2{
+  float: left;
+  padding: 20px;
+}
+#as{
+  float: right;
+  width: 300px;
+  height: 200px;
+}
+.container3{
+  float: left;
+  padding: 20px;
+}
+#cse{
+  float: right;
+  width: 275px;
+  height: 200px;
+}
+.container4{
+  float: left;
+  padding: 50px;
+  
+}
+#ece{
+  float: right;
+  width: 300px;
+  height: 200px;
+}
+.container5{
+  float: left;
+  padding: 50px;
+  
+}
+#eee{
+  float: right;
+  width: 300px;
+  height: 200px;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .container-fluid a {
+    float: none;
+    width: 100%;
+  }
+  .footer{
+    width: 100%;
+  }
+}   
